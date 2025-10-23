@@ -1,0 +1,124 @@
+/*
+Colors
+Light purple: #D0BADD
+Dark purple: #0A0014
+Cream: #E2DEB9
+Black: #000000
+White: #ffffff
+
+Fonts
+Headings: Aref Ruqaa Ink
+Body: Afacad
+*/
+
+body{
+    font-family: afacad;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: #fff;
+}
+
+body .button_lightpurple{
+    margin-top: 25px;
+}
+
+.button_lightpurple{
+    font-family: aref ruqaa ink;
+    font-size: 1.5rem;
+    font-weight:700;
+    color: #0A0014;
+    background-color: #D0BADD;
+    padding: 20px 15px 20px 15px;
+    border-radius: 20px;
+}
+
+.clouds{
+    margin-top:-400px;
+}
+
+h1{
+    font-family: aref ruqaa ink;
+    font-size: 5.5rem;
+    font-weight:700;
+    line-height: 6.2rem;
+    color: #fff;
+}
+
+.hero_container{
+    background-color: #0A0014;
+    width: 1440px;
+    height: 650px;
+    display:flex;
+}
+
+.left_half{
+    width: 427;
+    margin-left: 133px;
+}
+
+.right_half{
+    width: 1027px;
+}
+
+.side-nav{
+    display:flex;
+}
+
+.side-nav li{
+    margin-right: 55px;
+    align-content: center;
+}
+
+nav{
+    background-color: #000000;
+    color:#ffffff;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul{
+    display:flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+}
+
+ul img{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+html {
+  font-size: 10px;
+}
+
+
+/*css animations*/
+.clouds_moving{
+    animation-name: drift;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drift {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(200px);} 
+    50% {transform: translateX(0);}
+    75% {transform: translateX(-200px)}
+    }
+
+/*originalclouds
+.clouds_moving:hover{
+    transform: translateX(50px);
+    transition: transform 2000ms ease-in-out;
+}
+    */
+
+.moon_animation{
+    transform: rotate(360deg);
+    transition: transform 35s ease-in-out;
+    animation-iteration-count: infinite;
+}
